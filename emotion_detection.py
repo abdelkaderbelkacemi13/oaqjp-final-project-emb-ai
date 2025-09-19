@@ -10,7 +10,7 @@ def emotion_detector(text_to_analyze):
     
     emotion_results = json.loads(response.text)
 
-    user_emotion = emotion_results['emotion_predictions'][0]['emotion']
+    user_emotion = emotion_results['emotionPredictions'][0]['emotion']
     anger = user_emotion['anger']
     disgust = user_emotion['disgust']
     fear = user_emotion['fear']
